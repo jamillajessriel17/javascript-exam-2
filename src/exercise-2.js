@@ -1,5 +1,8 @@
 const getTheExactNumber = (numbers) => {
-  // implement code here
-}
+  const divisbleBy3 = numbers.filter((element) => {
+    return element % 3 === 0;
+  });
+  return Math.max(...divisbleBy3);
+};
 
 export default getTheExactNumber;
